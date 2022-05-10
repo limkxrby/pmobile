@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
 
 /*
 	Epilogue by TEMPLATED
@@ -299,12 +300,7 @@
 	}
 
 /* Box */
-.column {
-	float: right;
-	width: 33.33%;
-	padding: 30px;
-	
-	  }
+
 	  .center {
 		display: flex;
 		justify-content: center;
@@ -1243,6 +1239,13 @@
 
 /* Wrapper */
 
+.column {
+	float: right;
+	width: 33.33%;
+	padding: 30px;
+	height: 300px;
+	  }
+
 	#wrapper {
 		width: 64em;
 		margin: 0 auto;
@@ -1265,6 +1268,11 @@
 				}
 
 		}
+		@media screen and (max-width: 600px) {
+			.column {
+			  width: 100%;
+			}
+		  }
 
 		@media screen and (max-width: 736px) {
 
@@ -1384,10 +1392,11 @@
 
 			#header.alt h1 {
 				font-size: 4em;
+				
 				padding: 0 0.5em 0.25em 0.5em;
 				border-bottom: solid 2px #ffffff;
 				font-weight: 200;
-				font-family: "Pacifico", cursive;
+				font-family: "Monoton", cursive;
 				text-transform: none;
 				letter-spacing: 0;
 			}
